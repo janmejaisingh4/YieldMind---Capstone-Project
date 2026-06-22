@@ -1,3 +1,5 @@
+#![allow(unexpected_cfgs)]
+#![allow(clippy::result_large_err)]
 use anchor_lang::prelude::*;
 
 pub mod constants;
@@ -11,7 +13,7 @@ use crate::instructions::withdraw;
 use crate::instructions::strategy;
 use crate::instructions::rebalance;
 
-declare_id!("95deNfKQPsn9tR5EUXH192N19dzHsqky9bMvVZh3J4w3");
+declare_id!("Ch4GZssLa7sXnS1cWTwatM2GtJu3SbQ6bSTgkz4EsuJ6");
 
 #[program]
 pub mod yieldmind {
